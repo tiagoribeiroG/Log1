@@ -1,0 +1,201 @@
+/* 
+variaveis */
+
+;root {
+    --main-color: #407bff;
+    --link-color: #666666;
+    --text1: #999999;
+    --highligth-text: #555555;
+    --input-text: #555555;
+    --white-color: #ffffff;
+    --points-list: #cccccc;
+    --line-input: #d9d9d9;
+
+}
+
+/* 
+Fontes */
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('/fonts/Poppins-Regular.ttf')
+}
+
+@font-face {
+    font-family: Poppins-Medium;
+    src: url('/fonts/Poppins-Medium.ttf')
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    src: url('/fonts/Poppins-Bold.ttf')
+}
+@font-face {
+    font-family: Poppins-SemiBold;
+    src: url('/fonts/Poppins-SemiBold.ttf')
+}
+
+/*Zerar esstilos 
+ */
+
+ * {
+    margin: 0%;
+    padding: 0%;
+ }
+
+ body, html {
+    height: 100%;
+    font-family: Poppins-Regular, sans-serif;
+
+ }
+
+ ul, li {
+    margin: 0%;
+    list-style-type: none;
+ }
+
+ input, button {
+    outline: none !important;
+    border: none;
+ }
+
+ button:hover {
+    cursor: pointer;
+ }
+
+ /* Utilitarios */
+
+ .text1 {
+    font-family: Poppins-Regular;
+    font-size: 15px;
+    color: var(--text1);
+    line-height: 1.5;
+ }
+
+  .text2 {
+    font-family: Poppins-Regular;
+    font-size: 15px;
+    color: var(--main-color);
+    line-height: 1.5;
+ }
+
+ .margin-bottom-35 {
+    margin-bottom: 35px;
+ }
+
+ .margin-top-35 {
+    margin-top: 35px;
+ }
+
+  .margin-bottom-8 {
+    margin-bottom: 8px;
+ }
+
+ .margin-top-8 {
+    margin-top: 8px;
+ }
+
+  .margin-left-50 {
+    margin-left: 50px;
+ }
+
+
+/* login */
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-login {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: var(--white-color);
+}
+
+.wrap-login {
+    width: 370px;
+    margin-right: 50px;
+    background-color: var(--white-color);
+}
+
+/* Formulario */
+
+.login-form {
+    width: 100%;
+
+}
+
+.login-form-title {
+    display: block;
+    font-family: Poppins-Bold;
+    font-size: 39px;
+    color: var(--highligth-text);
+    line-height: 1.2;
+    text-align: center;
+}
+
+/* imput */
+
+.wrap-input {
+    width: 100%;
+    position: relative;
+    border-bottom: 5px solid var(--main-color);
+
+}
+
+.input-form {
+    font-family: Poppins-SemiBold;
+    font-size: 18px;
+    color: var(--input-text);
+    line-height: 1.2;
+    display: block;
+    width: 100%;
+    height: 52px;
+    background: transparent;
+    padding: 0 5px;
+}
+
+.focus-input-form {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.focus-input-form::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: all 0.4s;
+    background-color: var(--main-color);
+}
+
+.focus-input-form::after {
+    font-family: Poppins_Medium;
+    font-size: 18px;
+    color: var(--text1);
+    line-height: 1.2;
+    content: aattr(data-placeholder);
+
+}
+
+
+
+
+
+
+
+
